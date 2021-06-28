@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-    ViewPropTypes,
     StyleSheet,
     Text,
 	TouchableOpacity,
@@ -40,7 +39,7 @@ MultiToggleSwitchItem.propTypes = {
 	iconName: PropTypes.string,
 	primaryColor: PropTypes.string,
 	secondaryColor: PropTypes.string,
-	itemContainer: ViewPropTypes.style,
-	activeContainerStyle: ViewPropTypes.style,
+	itemContainer: PropTypes.object,
+	activeContainerStyle: PropTypes.object,
 	onPress: PropTypes.func,
 }

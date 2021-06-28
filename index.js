@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {
     View,
-		ViewPropTypes,
     StyleSheet,
     Text,
 	TouchableOpacity
@@ -50,7 +49,7 @@ export default class MultiToggleSwitch extends Component {
 
 	render(){
 		return(
-	          <View style={{backgroundColor: 'transparent', marginTop: 10}}>
+	          <View style={{backgroundColor: 'transparent', marginTop: 0}}>
 			  		<View style={[this.props.itemsContainerBackgroundStyle, {width: (50+15)*this.props.children.length}]}/>
 					{this.renderToggleItems()}
 	          </View>
@@ -99,7 +98,7 @@ MultiToggleSwitch.defaultProps = {
 		marginTop: 15,
 		marginLeft: 5,
 		borderRadius: 30,
-		backgroundColor: 'white'
+		backgroundColor: 'white',
 	},
 	onPress: () => {},
 }
@@ -108,9 +107,9 @@ MultiToggleSwitch.propTypes = {
 	defaultActiveIndex: PropTypes.number,
 	primaryColor: PropTypes.string,
 	secondaryColor: PropTypes.string,
-	itemContainer: ViewPropTypes.style,
-	activeContainerStyle: ViewPropTypes.style,
-	itemsContainer: ViewPropTypes.style,
-	itemsContainerBackgroundStyle: ViewPropTypes.style,
+	itemContainer: PropTypes.object,
+	activeContainerStyle: PropTypes.object,
+	itemsContainer: PropTypes.object,
+	itemsContainerBackgroundStyle: PropTypes.object,
 	onPress: PropTypes.func,
 }

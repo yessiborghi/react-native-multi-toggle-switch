@@ -9,7 +9,7 @@ MultiToggle Switch for React-Native
 
 ### Installation
 ```
-npm i react-native-multi-toggle-switch --save
+npm i @yessiborghi/react-native-multi-toggle-switch --save
 ```
 Link `react-native-vector-icons` native dependencies to your project with:
 ```
@@ -27,7 +27,7 @@ react-native link
 **First step:** import the component:
 
 ```
-import MultiToggleSwitch from 'react-native-multi-toggle-switch';
+import MultiToggleSwitch from '@yessiborghi/react-native-multi-toggle-switch';
 ```
 
 **Second step:** Use it.
